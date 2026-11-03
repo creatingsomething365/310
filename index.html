@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComputeMatrix | Types of Computing Machines</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-microchip"></i>
+            <span>ComputeMatrix</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link active" data-target="home">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="drop-btn">Machine Types <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#" class="nav-link" data-target="supercomputers">Supercomputers</a></li>
+                        <li><a href="#" class="nav-link" data-target="mainframes">Mainframes</a></li>
+                        <li><a href="#" class="nav-link" data-target="workstations">Workstations</a></li>
+                        <li><a href="#" class="nav-link" data-target="microcomputers">Microcomputers (PCs)</a></li>
+                        <li><a href="#" class="nav-link" data-target="embedded">Embedded Systems</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="nav-link" data-target="specs">Hardware & Software Specs</a></li>
+                <li><a href="#" class="nav-link" data-target="purposes">Purposes & Use Cases</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="content-section active">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Architectures of Modern Computing</h1>
+                    <p>Explore the evolution, hardware specifications, software stacks, and core operational purposes of computing machines ranging from edge embedded devices to exascale supercomputers.</p>
+                    <div class="hero-btns">
+                        <button class="btn primary nav-link" data-target="supercomputers">Explore Machines</button>
+                        <button class="btn secondary nav-link" data-target="specs">View Specifications</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="pic2.jpg" alt="Developer Workspace Setup">
+                </div>
+            </div>
+            <div class="grid-cards">
+                <div class="card nav-link" data-target="supercomputers">
+                    <i class="fa-solid fa-server"></i>
+                    <h3>Supercomputers</h3>
+                    <p>Exascale processing power for climate modeling, nuclear simulation, and AI workloads.</p>
+                </div>
+                <div class="card nav-link" data-target="mainframes">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <h3>Mainframes</h3>
+                    <p>High-reliability, high-throughput enterprise transaction and database processing.</p>
+                </div>
+                <div class="card nav-link" data-target="workstations">
+                    <i class="fa-solid fa-desktop"></i>
+                    <h3>Workstations</h3>
+                    <p>Professional-grade hardware for CAD, 3D rendering, and scientific computing.</p>
+                </div>
+                <div class="card nav-link" data-target="embedded">
+                    <i class="fa-solid fa-microchip"></i>
+                    <h3>Embedded Systems</h3>
+                    <p>Dedicated real-time controllers in automobiles, medical gear, and IoT devices.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="supercomputers" class="content-section">
+            <h2>Supercomputers</h2>
+            <p class="section-lead">The pinnacle of computational speed, measuring performance in exaflops.</p>
+            
+            <div class="section-banner">
+                <img src="pic7.jpg" alt="Frontier Supercomputer Server Racks">
+            </div>
+
+            <div class="spec-grid">
+                <div class="spec-box">
+                    <h3><i class="fa-solid fa-hard-drive"></i> Hardware Specifications</h3>
+                    <ul>
+                        <li><strong>Processor:</strong> Massive parallel arrays of multi-core CPUs & GPUs (e.g., NVIDIA H100/B200 clusters).</li>
+                        <li><strong>Memory:</strong> Petabytes of distributed RAM with high-bandwidth interconnects (InfiniBand/Slingshot).</li>
+                        <li><strong>Storage:</strong> Multi-petabyte parallel file systems (NVMe arrays).</li>
+                        <li><strong>Cooling:</strong> Advanced liquid-cooling and immersion systems.</li>
+                    </ul>
+                </div>
+                <div class="spec-box">
+                    <h3><i class="fa-solid fa-code"></i> Software Stack</h3>
+                    <ul>
+                        <li><strong>OS:</strong> Customized Linux distributions (e.g., Red Hat Enterprise Linux, Rocky Linux).</li>
+                        <li><strong>Compilers/Libraries:</strong> MPI, OpenMP, CUDA, ROCm for parallel execution.</li>
+                        <li><strong>Scheduler:</strong> Slurm Workload Manager, PBS Pro.</li>
+                    </ul>
+                </div>
+                <div class="spec-box purpose-box">
+                    <h3><i class="fa-solid fa-bullseye"></i> Primary Purposes</h3>
+                    <p>Weather forecasting, climate change modeling, molecular dynamics, nuclear stockpile simulation, and training frontier artificial intelligence foundation models.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="mainframes" class="content-section">
+            <h2>Mainframe Computers</h2>
+            <p class="section-lead">Enterprise backbone systems engineered for absolute reliability, security, and continuous uptime.</p>
+            
+            <div class="section-banner">
+                <img src="pic4.jpg" alt="Enterprise Network Patch Panel and Connections">
+            </div>
+
+            <div class="spec-grid">
+                <div class="spec-box">
+                    <h3><i class="fa-solid fa-hard-drive"></i> Hardware Specifications</h3>
+                    <ul>
+                        <li><strong>Processor:</strong> Proprietary multi-core enterprise chips (e.g., IBM Telum processor with on-chip AI accelerator).</li>
+                        <li><strong>Memory:</strong> Up to several TBs of redundant error-correcting code (ECC) memory.</li>
+                        <li><strong>I/O Subsystem:</strong> Dedicated cryptographic coprocessors and redundant channel controllers.</li>
+                    </ul>
+                </div>
+                <div class="spec-box">
+                    <h3><i class="fa-solid fa-code"></i> Software Stack</h3>
+                    <ul>
+                        <li><strong>OS:</strong> z/OS, z/VM, Linux on IBM Z.</li>
+                        <li><strong>Databases:</strong> IBM DB2, IMS, CICS transaction server.</li>
+                        <li><strong>Security:</strong> RACF (Resource Access Control Facility) for ironclad enterprise security.</li>
+                    </ul>
+                </div>
+                <div class="spec-box purpose-box">
+                    <h3><i class="fa-solid fa-bullseye"></i> Primary Purposes</h3>
+                    <p>Core banking transaction processing, credit card authorization, large-scale insurance policy management, and enterprise resource planning (ERP) systems.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="workstations" class="content-section">
+            <h2>Workstations</h2>
+            <p class="section-lead">High-performance personal systems tailored for engineering, architecture, and media creation.</p>
+            
+            <div class="section-banner">
+                <img src="pic3.jpg" alt="High-Performance Workstation Laptop with RGB Backlighting">
+            </div>
+
+            <div class="spec-grid">
+                <div class="spec-box">
+                    <h3><i class="fa-solid fa-hard-drive"></i> Hardware Specifications</h3>
+                    <ul>
+                        <li><strong>Processor:</strong> High clock-speed multi-core CPUs (Intel Xeon or AMD Threadripper).</li>
+                        <li><strong>GPU:</strong> Professional workstation graphics (NVIDIA RTX Pro / AMD Radeon Pro).</li>
+                        <li><strong>RAM:</strong> 64GB to 512GB ECC RAM.</li>
+                    </ul>
+                </div>
+                <div class="spec-box">
+                    <h3><i class="fa-solid fa-code"></i> Software Stack</h3>
+                    <ul>
+                        <li><strong>OS:</strong> Windows 11 Pro / Enterprise, Ubuntu Linux, macOS (Apple Silicon Studio/Pro).</li>
+                        <li><strong>Applications:</strong> Autodesk AutoCAD, Blender, Adobe Premiere Pro, MATLAB, ANSYS.</li>
+                    </ul>
+                </div>
+                <div class="spec-box purpose-box">
+                    <h3><i class="fa-solid fa-bullseye"></i> Primary Purposes</h3>
+                    <p>Computer-Aided Design (CAD), 3D animation and rendering, scientific data visualization, software compilation, and video production.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="microcomputers" class="content-section">
+            <h2>Microcomputers (Personal Computers)</h2>
+            <p class="section-lead">Versatile, general-purpose computing devices designed for individual productivity, education, and entertainment.</p>
+            
+            <div class="section-banner">
+                <img src="pic5.jpg" alt="Personal Computer Desk Workspace Setup">
+            </div>
+
+            <div class="spec-grid">
+                <div class="spec-box">
+                    <h3><i class="fa-solid fa-hard-drive"></i> Hardware Specifications</h3>
+                    <ul>
+                        <li><strong>Processor:</strong> Consumer-grade CPUs/SoCs (Intel Core, AMD Ryzen, Apple M-series).</li>
+                        <li><strong>Memory:</strong> 8GB to 64GB LPDDR5/DDR5 RAM.</li>
+                        <li><strong>Storage:</strong> 256GB to 2TB NVMe PCIe SSD.</li>
+                    </ul>
+                </div>
+                <div class="spec-box">
+                    <h3><i class="fa-solid fa-code"></i> Software Stack</h3>
+                    <ul>
+                        <li><strong>OS:</strong> Windows, macOS, ChromeOS, Ubuntu/Linux.</li>
+                        <li><strong>Productivity:</strong> Microsoft 365, web browsers (Chrome/Firefox), media players, development IDEs (VS Code).</li>
+                    </ul>
+                </div>
+                <div class="spec-box purpose-box">
+                    <h3><i class="fa-solid fa-bullseye"></i> Primary Purposes</h3>
+                    <p>Daily web browsing, document drafting, remote work, casual gaming, multimedia streaming, and general personal computing.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="embedded" class="content-section">
+            <h2>Embedded Systems</h2>
+            <p class="section-lead">Dedicated computing systems integrated into larger mechanical or electrical devices to execute specific control tasks.</p>
+            
+            <div class="section-banner">
+                <img src="pic6.jpg" alt="Arduino Uno Microcontroller Circuit Board">
+            </div>
+
+            <div class="spec-grid">
+                <div class="spec-box">
+                    <h3><i class="fa-solid fa-hard-drive"></i> Hardware Specifications</h3>
+                    <ul>
+                        <li><strong>Processor:</strong> Low-power Microcontrollers (ARM Cortex-M, RISC-V, ESP32).</li>
+                        <li><strong>Memory:</strong> Minimal Flash storage (KB to MBs) and SRAM.</li>
+                        <li><strong>Interface:</strong> GPIO pins, I2C, SPI, UART, CAN bus for sensors and actuators.</li>
+                    </ul>
+                </div>
+                <div class="spec-box">
+                    <h3><i class="fa-solid fa-code"></i> Software Stack</h3>
+                    <ul>
+                        <li><strong>OS:</strong> Real-Time Operating Systems (FreeRTOS, Zephyr) or bare-metal C/C++ firmware.</li>
+                        <li><strong>Toolchains:</strong> GCC cross-compilers, Arduino IDE, PlatformIO.</li>
+                    </ul>
+                </div>
+                <div class="spec-box purpose-box">
+                    <h3><i class="fa-solid fa-bullseye"></i> Primary Purposes</h3>
+                    <p>Automotive engine control units (ECUs), medical pacemakers, home appliances, industrial robotics, and smart home IoT sensors.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="specs" class="content-section">
+            <h2>Comparative Hardware & Software Matrix</h2>
+            <p class="section-lead">A high-level comparison across different scales of computing machinery.</p>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Machine Class</th>
+                            <th>Primary Processor</th>
+                            <th>Typical Memory</th>
+                            <th>Operating System</th>
+                            <th>Target Scale</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Supercomputer</strong></td>
+                            <td>Multi-core CPU + GPU Clusters</td>
+                            <td>Petabytes</td>
+                            <td>Custom Linux (RHEL/Rocky)</td>
+                            <td>Exascale / National Labs</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mainframe</strong></td>
+                            <td>IBM Telum / Enterprise CPU</td>
+                            <td>Terabytes (ECC)</td>
+                            <td>z/OS, z/VM, Linux on Z</td>
+                            <td>Global Enterprise / Banking</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Workstation</strong></td>
+                            <td>Intel Xeon / AMD Threadripper</td>
+                            <td>64GB - 512GB</td>
+                            <td>Windows Pro / Linux</td>
+                            <td>Professional / Engineering</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Microcomputer</strong></td>
+                            <td>Core i5/i7 or Apple M-Series</td>
+                            <td>8GB - 64GB</td>
+                            <td>Windows, macOS, Linux</td>
+                            <td>Individual User</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Embedded</strong></td>
+                            <td>ARM Cortex-M / RISC-V SoC</td>
+                            <td>KB to MBs</td>
+                            <td>FreeRTOS / Bare-Metal</td>
+                            <td>Device-Level Control</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="purposes" class="content-section">
+            <h2>Purposes & Societal Impact</h2>
+            <p class="section-lead">How each computing category drives technological progress and industry infrastructure.</p>
+            <div class="purpose-grid">
+                <div class="p-card">
+                    <h3><i class="fa-solid fa-flask"></i> Scientific Discovery</h3>
+                    <p>Supercomputers simulate quantum mechanics, drug discovery, and climate trends that safeguard human well-being.</p>
+                </div>
+                <div class="p-card">
+                    <h3><i class="fa-solid fa-shield-halved"></i> Financial Security</h3>
+                    <p>Mainframes process billions of secure daily transactions without fractional downtime, keeping global commerce stable.</p>
+                </div>
+                <div class="p-card">
+                    <h3><i class="fa-solid fa-cube"></i> Creative Innovation</h3>
+                    <p>Workstations empower artists and engineers to build cinematic masterpieces and aerodynamic transport.</p>
+                </div>
+                <div class="p-card">
+                    <h3><i class="fa-solid fa-network-wired"></i> Ubiquitous Automation</h3>
+                    <p>Embedded systems silently power every smart device, vehicle, and industrial assembly line in the modern world.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ComputeMatrix Project. Built for Individual Prototype Demonstration.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
